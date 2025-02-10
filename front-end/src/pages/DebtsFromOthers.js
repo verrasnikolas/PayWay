@@ -26,18 +26,20 @@ export default function DebtsFromOthers() {
     }, []);
 
     return (
-        <div style={{ padding: "20px" }}>
-            <h2 style={{ textAlign: "center", color: "#4CAF50" }}>Debts from Others</h2>
-
+        <div style={{ padding: "10px" }}>
             {loading ? (
                 <p style={{ textAlign: "center", color: "#555" }}>Loading debts...</p>
             ) : error ? (
                 <p style={{ textAlign: "center", color: "red" }}>{error}</p>
             ) : debts.length === 0 ? (
-                <p style={{ textAlign: "center", color: "#555" }}>
+                <p style={{ textAlign: "center", color: "#555", fontSize: "16px"  }}>
                     No debts found from other operators.
                 </p>
             ) : (
+                <div>
+                <p style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
+                    Current debts from other operators.
+                </p>
                 <table
                     style={{
                         width: "100%",
@@ -65,12 +67,13 @@ export default function DebtsFromOthers() {
                                 {debt.fromOpName}
                             </td>
                             <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                                {debt.debtAmount.toFixed(2)}
+                                {debt.debtAmount.toFixed(2)} €
                             </td>
                         </tr>
                     ))}
                     </tbody>
                 </table>
+                </div>
             )}
         </div>
     );

@@ -5,10 +5,10 @@ Repository, used for NTUA/ECE Software Engineering, 2024-2025, team softeng24-25
 
 ## Team 25 - Contributors
 
-- Anastasia Askouni el20046@mail.ntua.gr
-- Nikolaos Verras el21440@mail.ntua.gr
-- Angeliki Zerva el21101@mail.ntua.gr
-- Dimitrios Kampanakis el21012@mail.ntua.gr
+- Anastasia Askouni
+- Nikolaos Verras 
+- Angeliki Zerva 
+- Dimitrios Kampanakis 
 
 ## Description
 
